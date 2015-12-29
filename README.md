@@ -8,8 +8,8 @@ Like with wine.
 
 *USAGE*
 
-wine wait4 <process>
+wine wait4 \<process\>
 
 OR
 
-<process> wait4 <process>
+<process> wait4 \<process\>
