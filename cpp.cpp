@@ -4,8 +4,6 @@
 #include "kul/proc.hpp"
 
 int main(int argc, char* argv[]){
-	short ec = 0;
-	
 	if(argc > 1){
 		try{
 			kul::Process p(argv[1]);
