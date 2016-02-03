@@ -6,5 +6,4 @@ version: master
 dep: 
   - name: mkn.kul
     version: master
-    scm: http://github.com/mkn/mkn.kul.git
 main: cpp.cpp
