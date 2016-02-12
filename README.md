@@ -7,6 +7,6 @@ When the process you're calling doesn't last until all child processes are done.
 
 wine wait4 \<process\> \<args\>
 
-OR
+*OR*
 
 \<process\> wait4 \<process\> \<args\>
