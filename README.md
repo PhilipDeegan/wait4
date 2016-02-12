@@ -5,8 +5,8 @@ When the process you're calling doesn't last until all child processes are done.
 
 *USAGE*
 
-wine wait4 \<process\>
+wine wait4 \<process\> \<args\>
 
 OR
 
-\<process\> wait4 \<process\>
+\<process\> wait4 \<process\> \<args\>
