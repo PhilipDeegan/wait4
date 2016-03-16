@@ -36,7 +36,7 @@ int main(int argc, char* argv[]){
 	if(argc > 1){
 		try{
 			kul::Process p(argv[1]);
-			for(uint i = 2; i < argc; i++) p.arg(argv[i]);
+			for(int16_t i = 2; i < argc; i++) p.arg(argv[i]);
 			p.start();
 		}
 		catch(const kul::proc::ExitException& e){ return e.code();}
