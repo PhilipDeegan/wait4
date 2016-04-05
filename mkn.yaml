@@ -1,7 +1,6 @@
 
 
 name: wait4
-version: master
 
 dep: 
   - name: mkn.kul
