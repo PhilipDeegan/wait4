@@ -1,7 +1,6 @@
 #! clean build -tKa -Os
 
 name: wait4
-version: master
 
 dep: 
   - name: mkn.kul
