@@ -4,5 +4,5 @@ name: wait4
 
 dep: 
   - name: mkn.kul
-    version: master
+    version: 21062016
 main: cpp.cpp
