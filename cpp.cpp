@@ -33,16 +33,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "kul/proc.hpp"
 
 int main(int argc, char* argv[]){
-	if(argc > 1){
-		try{
-			kul::Process p(argv[1]);
-			for(int16_t i = 2; i < argc; i++) p.arg(argv[i]);
-			p.start();
-		}
-		catch(const kul::proc::ExitException& e){ return e.code();}
-		catch(const kul::Exception& e){ KERR << e.what(); return 2;}
-		catch(const std::exception& e){ KERR << e.what(); return 3;}
-		catch(...){ return 1; }
-	}
-	return 0;
+    if(argc > 1){
+        try{
+            kul::Process p(argv[1]);
+            for(int16_t i = 2; i < argc; i++) p.arg(argv[i]);
+            p.start();
+        }
+        catch(const kul::proc::ExitException& e){ return e.code();}
+        catch(const kul::Exception& e){ KERR << e.what(); return 2;}
+        catch(const std::exception& e){ KERR << e.what(); return 3;}
+        catch(...){ KERR << "UNKNOWN EXCEPTION TYPE CAUGHT"; return 1;}
+    }
+    return 0;
 }
